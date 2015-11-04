@@ -1,0 +1,39 @@
+html {
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	margin: 0em;
+}
+
+header {
+	background-color: #555;
+}
+
+.billboard {
+	background-image: url(http://placehold.it/1000x500);
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 0em;
+}
+
+
+.signup-bar {
+	background-color: gray;
+	text-align: center;
+}
+
+.signup-bar h2{
+	margin: 0em;
+}
+
+.contact {
+	background-color: #555;
+}
+
+
+
+@media only screen and (min-width: 38em) {
+
