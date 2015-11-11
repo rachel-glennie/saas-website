@@ -34,6 +34,31 @@ header {
 }
 
 
+.contact img {
+	max-width: 40%;
+}
+
 
 @media only screen and (min-width: 38em) {
 
+
+}
+
+
+@media only screen and (min-width: 60em) {
+
+	.contact img {
+		max-width: 30%;
+	}
+
+
+}
+
+@media only screen and (min-width: 90em) {
+
+		.contact img {
+		max-width: 160px;
+	}
+
+
+}
