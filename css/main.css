@@ -42,7 +42,7 @@ nav li {
 	text-align: center;
 }
 
-.signup-bar h2{
+.signup-bar h2 {
 	margin: 0em;
 }
 
@@ -50,6 +50,13 @@ nav li {
 	background-color: #555;
 }
 
+.contact a {
+	color: grey;
+}
+
+.contact p, .contact h5 {
+	margin: 0em;
+}
 
 .contact img {
 	max-width: 40%;
