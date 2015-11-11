@@ -12,6 +12,17 @@ header {
 	background-color: #555;
 }
 
+
+nav ol {
+	margin: 0em;
+	text-align: right;
+}
+
+nav li {
+	padding: 0em 1em;
+}
+
+
 .billboard {
 	background-image: url(http://placehold.it/1000x500);
 	background-repeat: no-repeat;
@@ -19,6 +30,12 @@ header {
 	margin: 0em;
 }
 
+.button-style-1 {
+	border-radius: 1em;
+	background-color: black;
+	padding: 0.5em 1em;
+	font-size: 1.2rem;
+}
 
 .signup-bar {
 	background-color: gray;
