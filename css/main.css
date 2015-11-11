@@ -24,10 +24,14 @@ nav li {
 
 
 .billboard {
-	background-image: url(http://placehold.it/1000x500);
+	background-image: url(http://placehold.it/3000x400);
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 0em;
+}
+
+.billboard-unit {
+	padding: 5rem 1rem;
 }
 
 .button-style-1 {
