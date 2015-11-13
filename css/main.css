@@ -13,7 +13,7 @@ header {
 	background-color: #555;
 }
 
-label img {
+.nav-label img {
 	max-width: 50px;
 	text-align: right;
 }
@@ -22,8 +22,15 @@ nav ol {
 	text-align: right;
 }
 
+nav li {
+	padding: 0.5em;
+	border-top: 2px solid black;
+	text-align: center
+}
+
 .nav {
 	display: none;
+	margin: none;
 }
 
 .nav-check:checked ~ .nav{
@@ -43,7 +50,13 @@ nav ol {
 	display: none;
 }
 
+.nav-check:checked ~ .nav-label .nav-open {
+	display: none;
+}
 
+.nav-check:checked ~ .nav-label .nav-close {
+	display: block;
+}
 
 .billboard {
 	background-image: url(http://placehold.it/3000x800);
@@ -123,9 +136,13 @@ nav ol {
 		display: block;
 	}
 
-	.nav-open, .nav-close {
+	.nav-label img {
 		display: none;
 	}
+
+.nav-check:checked ~ .nav-label .nav-close {
+	display: none;
+}
 
 	nav ol {
 		margin: 0em;
@@ -134,6 +151,8 @@ nav ol {
 
 	nav li {
 		padding: 0em 1em;
+		border: none;
+		display: inline-block;
 	}
 
 
