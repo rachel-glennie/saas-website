@@ -6,21 +6,43 @@ a {
 	text-decoration: none;
 	color: white;
 	margin: 0em;
+	cursor: pointer;
 }
 
 header {
 	background-color: #555;
 }
 
-
-nav ol {
-	margin: 0em;
+label img {
+	max-width: 50px;
 	text-align: right;
 }
 
-nav li {
-	padding: 0em 1em;
+nav ol {
+	text-align: right;
 }
+
+.nav {
+	display: none;
+}
+
+.nav-check:checked ~ .nav{
+	display: block;
+}
+
+.nav-check {
+	position: absolute;
+	margin: -5em;
+}
+
+.nav-label {
+	cursor: pointer;
+}
+
+.nav-close {
+	display: none;
+}
+
 
 
 .billboard {
@@ -95,6 +117,23 @@ nav li {
 
 	.contact img {
 		max-width: 30%;
+	}
+
+	.nav {
+		display: block;
+	}
+
+	.nav-open, .nav-close {
+		display: none;
+	}
+
+	nav ol {
+		margin: 0em;
+		text-align: right;
+	}
+
+	nav li {
+		padding: 0em 1em;
 	}
 
 

@@ -15,11 +15,16 @@
 <body>
 
   <header class="grid grid-middle island">
-    <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
+    <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
       <a href="index.html"><img src="http://placehold.it/150x50" alt="Just a placeholder."></a>
     </div>
-    <nav class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
-      <ol class="list-group list-group--inline">
+    <nav class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <label for="nav-check" class="nav-label">
+        <img class="nav-open" src="images/nav-toggle.svg" alt="Open Navigation Menu">
+        <img class="nav-close" src="images/nav-toggle-close.svg" alt="Close Navigation Menu">
+      </label>
+      <ol class="list-group list-group--inline nav">
         <li><a href="tour.html">Features</a></li>
         <li><a href="pricing.html">Plans</a></li>
         <li><a href="login.html">Log In</a></li>
