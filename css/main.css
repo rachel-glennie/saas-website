@@ -24,14 +24,14 @@ nav li {
 
 
 .billboard {
-	background-image: url(http://placehold.it/3000x400);
+	background-image: url(http://placehold.it/3000x800);
 	background-repeat: no-repeat;
 	text-align: center;
 	margin: 0em;
 }
 
 .billboard-unit {
-	padding: 5rem 1rem;
+	padding: 7rem 1rem;
 }
 
 .button-style-1 {
@@ -67,8 +67,26 @@ nav li {
 }
 
 
+/* Relate solely to specific pages */
+
+.index-item {
+	text-align: center;
+	margin: auto;
+}
+
+
+/* margin classes */
+
+.margin-medium {
+	margin: 0 auto;
+	max-width: 60em
+}
+
 @media only screen and (min-width: 38em) {
 
+	.index-item {
+		text-align: left;
+	}
 
 }
 
@@ -80,11 +98,14 @@ nav li {
 	}
 
 
+
 }
 
 @media only screen and (min-width: 90em) {
 
-		.contact img {
+
+
+	.contact img {
 		max-width: 160px;
 	}
 
