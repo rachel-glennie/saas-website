@@ -61,19 +61,19 @@ nav li {
 .billboard {
 	background-image: url(http://placehold.it/3000x800);
 	background-repeat: no-repeat;
-	text-align: center;
 	margin: 0em;
+	padding: 7rem 1rem;
+	text-align: center;
 }
 
-.billboard-unit {
-	padding: 7rem 1rem;
-}
 
 .button-style-1 {
 	border-radius: 1em;
 	background-color: black;
 	padding: 0.5em 1em;
 	font-size: 1.2rem;
+	color: white;
+
 }
 
 .signup-bar {
@@ -109,12 +109,15 @@ nav li {
 	margin: auto;
 }
 
+.hidden-label label {
+	display: none;
+}
 
 /* margin classes */
 
 .margin-medium {
 	margin: 0 auto;
-	max-width: 60em
+	max-width: 40rem
 }
 
 @media only screen and (min-width: 38em) {
@@ -128,6 +131,11 @@ nav li {
 
 @media only screen and (min-width: 60em) {
 
+	.margin-medium {
+		margin: 0 auto;
+		max-width: 40rem
+	}
+
 	.contact img {
 		max-width: 30%;
 	}
@@ -140,9 +148,9 @@ nav li {
 		display: none;
 	}
 
-.nav-check:checked ~ .nav-label .nav-close {
-	display: none;
-}
+	.nav-check:checked ~ .nav-label .nav-close {
+		display: none;
+	}
 
 	nav ol {
 		margin: 0em;
@@ -160,8 +168,6 @@ nav li {
 }
 
 @media only screen and (min-width: 90em) {
-
-
 
 	.contact img {
 		max-width: 160px;
