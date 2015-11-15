@@ -22,7 +22,7 @@
     <nav class="unit xs-1-3 s-1-3 m-1-3 l-1-2 xl-1-2">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label for="nav-check" class="nav-label">
-        <img class="nav-open pad-b" src="images/nav-toggle.svg" alt="Open Navigation Menu">
+        <img class="nav-open" src="images/nav-toggle.svg" alt="Open Navigation Menu">
         <img class="nav-close pad-b" src="images/nav-toggle-close.svg" alt="Close Navigation Menu">
       </label>
       <ol class="list-group nav">
@@ -34,8 +34,94 @@
     </nav>
   </header>
 
-<p></p>
+  <h1>Sign Up</h1>
 
+<form action="thanks.html" method="post">
+
+  <h3>Choose your plan</h3>
+
+  <fieldset>
+    <input id="personal" type="radio" name="plan">
+    <label for="personal">Personal Plan ($8/Month)</label>
+
+    <input id="home" type="radio" name="plan">
+    <label for="home">Home Plan ($18/Month)</label>
+
+    <input id="business" type="radio" name="plan">
+    <label for="business">Business Plan ($28/Month)</label>
+  </fieldset>
+
+
+
+  <h3>Create your account</h3>
+  <form action="thanks.html" method="post">
+
+  <div class="hidden-label">
+    <input id="first-name" placeholder="First Name">
+    <label for="first-name">First Name</label>
+  </div>
+
+  <div class="hidden-label">
+    <input id="last-name" placeholder="Last Name">
+    <label for="last-name">Last Name</label>
+  </div>
+
+  <div class="hidden-label">
+    <input type="email" id="email" placeholder="Email Address">
+    <label for="email">Email Address</label>
+  </div>
+
+  <div class="hidden-label">
+    <input type="password" id="password" placeholder="Password" minlength="6">
+    <label for="password">Password</label>
+  </div>
+
+  <div class="hidden-label">
+    <input type="password" id="confirm-password" placeholder="Confirm Password" minlength="6">
+    <label for="confirm-password">Confirm Password</label>
+  </div>
+
+
+  <h3>Set up your payment method</h3>
+
+
+  <fieldset>
+    <input id="personal" type="radio" name="payment">
+    <label for="personal">VISA</label>
+
+    <input id="mastercard" type="radio" name="payment">
+    <label for="mastercard">Mastercard</label>
+
+    <input id="a-express" type="radio" name="payment">
+    <label for="a-express">American Express</label>
+  </fieldset>
+
+  <div class="hidden-label">
+    <input id="card-name" placeholder="Cardholder's Name">
+    <label for="card-name">Cardholder's Name</label>
+  </div>
+
+  <div class="hidden-label">
+    <input id="card-number" placeholder="Card Number">
+    <label for="card-number">Card Number</label>
+  </div>
+
+  <div>
+    <label for="date">Expiration Date</label>
+    <input type="date" id="date" placeholder="Expiration Date">
+  </div>
+
+
+  <div>
+    <label for="security-code">Security Code</label>
+    <input type="password" id="security-code" placeholder="Security Code" maxlength="4">
+  </div>
+
+
+
+  <button type="submit" class="button-style-1">Submit</button>
+
+</form>
 
 
   <footer>
