@@ -28,6 +28,7 @@ nav li {
 	text-align: center
 }
 
+
 .nav {
 	display: none;
 	margin: none;
@@ -111,6 +112,16 @@ nav li {
 
 .hidden-label label {
 	display: none;
+}
+
+fieldset {
+	border: none;
+	margin: 0 auto;
+}
+
+fieldset div{
+	display: block;
+	padding: 0.75em;
 }
 
 /* margin classes */
