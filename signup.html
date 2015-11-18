@@ -34,127 +34,128 @@
     </nav>
   </header>
 
-  <div class="billboard">
+  <div class="mini-billboard">
     <h1>Sign Up</h1>
   </div>
 <form action="thanks.html" method="post">
 
-  <h3>Choose your plan</h3>
+  <div class="margin-medium pad-t-2 gutter">
+    <h3>Choose your plan</h3>
 
-  <fieldset>
-    <div>
-      <input id="personal" type="radio" name="plan">
-      <label for="personal">Personal Plan ($8/Month)</label>
+    <fieldset>
+      <div>
+        <input id="personal" type="radio" name="plan">
+        <label for="personal">Personal Plan ($8/Month)</label>
+      </div>
+
+      <div>
+        <input id="home" type="radio" name="plan">
+        <label for="home">Home Plan ($18/Month)</label>
+      </div>
+
+      <div>
+        <input id="business" type="radio" name="plan">
+        <label for="business">Business Plan ($28/Month)</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="margin-medium pad-b-2 gutter">
+    <h3>Create your account</h3>
+
+    <div class="hidden-label">
+      <input id="first-name" placeholder="First Name">
+      <label for="first-name">First Name</label>
+    </div>
+
+    <div class="hidden-label">
+      <input id="last-name" placeholder="Last Name">
+      <label for="last-name">Last Name</label>
+    </div>
+
+    <div class="hidden-label">
+      <input type="email" id="email" placeholder="Email Address">
+      <label for="email">Email Address</label>
+    </div>
+
+    <div class="hidden-label">
+      <input type="password" id="password" placeholder="Password">
+      <label for="password">Password</label>
+    </div>
+
+    <div class="hidden-label">
+      <input type="password" id="confirm-password" placeholder="Confirm Password">
+      <label for="confirm-password">Confirm Password</label>
+    </div>
+  </div>
+
+
+  <div class="margin-medium pad-b-2 gutter">
+    <h3>Set up your payment method</h3>
+
+    <fieldset>
+      <div>
+        <input id="visa" type="radio" name="payment">
+        <label for="visa">VISA</label>
+      </div>
+
+      <div>
+        <input id="mastercard" type="radio" name="payment">
+        <label for="mastercard">Mastercard</label>
+      </div>
+
+      <div>
+        <input id="a-express" type="radio" name="payment">
+        <label for="a-express">American Express</label>
+      </div>
+    </fieldset>
+
+    <div class="hidden-label">
+      <input id="card-name" placeholder="Cardholder's Name">
+      <label for="card-name">Cardholder's Name</label>
+    </div>
+
+    <div class="hidden-label">
+      <input id="card-number" placeholder="Card Number">
+      <label for="card-number">Card Number</label>
     </div>
 
     <div>
-      <input id="home" type="radio" name="plan">
-      <label for="home">Home Plan ($18/Month)</label>
+      <label for="date">Expiration Date</label>
+      <input type="date" id="date">
     </div>
+
 
     <div>
-      <input id="business" type="radio" name="plan">
-      <label for="business">Business Plan ($28/Month)</label>
-    </div>
-  </fieldset>
-
-
-
-  <h3>Create your account</h3>
-  <form action="thanks.html" method="post">
-
-  <div class="hidden-label">
-    <input id="first-name" placeholder="First Name">
-    <label for="first-name">First Name</label>
-  </div>
-
-  <div class="hidden-label">
-    <input id="last-name" placeholder="Last Name">
-    <label for="last-name">Last Name</label>
-  </div>
-
-  <div class="hidden-label">
-    <input type="email" id="email" placeholder="Email Address">
-    <label for="email">Email Address</label>
-  </div>
-
-  <div class="hidden-label">
-    <input type="password" id="password" placeholder="Password" minlength="6">
-    <label for="password">Password</label>
-  </div>
-
-  <div class="hidden-label">
-    <input type="password" id="confirm-password" placeholder="Confirm Password" minlength="6">
-    <label for="confirm-password">Confirm Password</label>
-  </div>
-
-
-  <h3>Set up your payment method</h3>
-
-
-  <fieldset>
-    <div>
-      <input id="personal" type="radio" name="payment">
-      <label for="personal">VISA</label>
+      <label for="security-code">Security Code</label>
+      <input type="password" id="security-code" placeholder="Security Code" maxlength="4">
     </div>
 
-    <div>
-      <input id="mastercard" type="radio" name="payment">
-      <label for="mastercard">Mastercard</label>
+    <div class="pad-t">
+      <button type="submit" class="button-style-1">Submit</button>
     </div>
-
-    <div>
-      <input id="a-express" type="radio" name="payment">
-      <label for="a-express">American Express</label>
-    </div>
-  </fieldset>
-
-  <div class="hidden-label">
-    <input id="card-name" placeholder="Cardholder's Name">
-    <label for="card-name">Cardholder's Name</label>
   </div>
-
-  <div class="hidden-label">
-    <input id="card-number" placeholder="Card Number">
-    <label for="card-number">Card Number</label>
-  </div>
-
-  <div>
-    <label for="date">Expiration Date</label>
-    <input type="date" id="date" placeholder="Expiration Date">
-  </div>
-
-
-  <div>
-    <label for="security-code">Security Code</label>
-    <input type="password" id="security-code" placeholder="Security Code" maxlength="4">
-  </div>
-
-
-
-  <button type="submit" class="button-style-1">Submit</button>
 
 </form>
 
 
-  <footer>
-
-    <div class="grid grid-middle contact island">
-      <div class="unit xs-1 s-1-2 m-1-2 l-1-2 xl-1-2">
-        <h5>Contact</h5>
-        <ul class="list-group milli">
-          <li>66 Dollar Way</li>
-          <li><a href="tel:+18002460142">1-800-246-0142</a></li>
-          <li><a href="mailto:info@fundfriend.com">info@fundfriend.com</a></li>
-        </ul>
-        <p class="milli">© 2015 FundFriend. All rights reserved.</p>
-      </div>
-      <div class="unit xs-1 s-1-2 m-1- l-1-2 xl-1-2">
-        <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
-        <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
-      </div>
+<footer>
+  <div class="grid grid-middle contact island">
+    <div class="unit xs-1 s-1-2 m-1-2 l-1-2 xl-1-2">
+      <h5>Contact</h5>
+      <ul class="list-group milli">
+        <li>66 Dollar Way</li>
+        <li><a href="tel:+18002460142">1-800-246-0142</a></li>
+        <li><a href="mailto:info@fundfriend.com">info@fundfriend.com</a></li>
+      </ul>
+      <p class="milli">© 2015 FundFriend. All rights reserved.</p>
     </div>
-  </footer>
+    <div class="unit xs-1 s-1-2 m-1- l-1-2 xl-1-2">
+      <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
+      <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
