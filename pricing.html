@@ -15,33 +15,40 @@
 </head>
 <body>
 
-  <header class="grid island">
-    <div class="unit xs-2-3 s-2-3 m-2-3 l-1-2 xl-1-2">
-      <a href="index.html"><img src="http://placehold.it/150x50" alt="Placeholder for the logo."></a>
-    </div>
-    <nav class="unit xs-1-3 s-1-3 m-1-3 l-1-2 xl-1-2">
-      <input type="checkbox" class="nav-check" id="nav-check">
-      <label for="nav-check" class="nav-label">
-        <img class="nav-open" src="images/nav-toggle.svg" alt="Open Navigation Menu">
-        <img class="nav-close pad-b" src="images/nav-toggle-close.svg" alt="Close Navigation Menu">
-      </label>
-      <ol class="list-group nav">
-        <li><a href="tour.html">Features</a></li>
-        <li><a href="pricing.html">Plans</a></li>
-        <li><a href="login.html">Log In</a></li>
-        <li class="button-style-1"><a href="signup.html">Sign Up!</a></li>
-      </ol>
-    </nav>
-  </header>
+<ul class="skip-links">
+  <li><a href="#main">Jump to main content</a></li>
+  <li><a href="#nav">Jump to navigation</a></li>
+</ul>
+
+<header class="grid island" role="banner">
+  <div class="unit xs-2-3 s-2-3 m-2-3 l-1-2 xl-1-2">
+    <a href="index.html"><img src="http://placehold.it/150x50" alt="FundFriend."></a>
+  </div>
+  <nav class="unit xs-1-3 s-1-3 m-1-3 l-1-2 xl-1-2" role="navigation">
+    <input type="checkbox" class="nav-check" id="nav-check">
+    <label for="nav-check" class="nav-label">
+      <img class="nav-open" src="images/nav-toggle.svg" alt="Open Navigation Menu">
+      <img class="nav-close pad-b" src="images/nav-toggle-close.svg" alt="Close Navigation Menu">
+    </label>
+    <ol class="list-group nav" role="navigation">
+      <li><a href="tour.html">Features</a></li>
+      <li><a href="pricing.html">Plans</a></li>
+      <li><a href="login.html">Log In</a></li>
+      <li class="button-style-1"><a href="signup.html">Sign Up!</a></li>
+    </ol>
+  </nav>
+</header>
 
   <div class="billboard">
-    <h1>PRICING</h1>
+    <h1>Pricing Plans</h1>
     <p class="mega">Choose a plan that fits what you're looking for.</p>
     <a class="button-style-1" href="signup.html">Sign Up!</a>
   </div>
 
-  <div class="grid">
-    <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+<main id="main">
+
+  <div class="grid pad-t-2">
+    <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 island plan-box">
       <h4>Personal Plan</h4>
       <ul>
         <li>Bill management (up to 4 payees)</li>
@@ -50,9 +57,10 @@
         <li>Bill Calendar.</li>
         <li>Invoice and Payment History (only for one previous month)</li>
       </ul>
+       <a class="button-style-1" href="signup.html">Get started</a>
     </div>
 
-    <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+    <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 island plan-box">
       <h4>Home Plan</h4>
       <p>Personal Plan +</p>
       <ul>
@@ -62,9 +70,10 @@
         <li>Invoice & payment history (six previous months)</li>
         <li>Monthly expense tracking</li>
       </ul>
+      <a class="button-style-1" href="signup.html">Get started</a>
     </div>
 
-    <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+    <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 island plan-box">
       <h4>Business Plan</h4>
       <p>Home Plan +</p>
       <ul>
@@ -72,53 +81,51 @@
         <li>Link Bank Accounts (Unlimited)</li>
         <li>Invoice & Payment History (Every month)</li>
         <li>Future Expense Predictions</li>
-    </ul>
+      </ul>
+      <a class="button-style-1" href="signup.html">Get started</a>
     </div>
   </div>
 
-  <h4>Testimonials</h4>
+  <h3 class="pad-t-2 gutter">Testimonials</h3>
 
   <div class="grid">
 
-    <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
-      This was a super duper great system that was exactly what I needed!
-      ~Mr. Teal, student,  Personal Plan
+    <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 island">
+      <blockquote>This was a super duper great system that was exactly what I needed!</blockquote>
+      <cite>~Mr. Teal, student,  Personal Plan</cite>
     </div>
 
-    <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
-      This was a super duper great system that was exactly what I needed!
-      ~Mrs. Green, mother of 2,  Home Plan
+    <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 island">
+      <blockquote>This was a super duper great system that was exactly what I needed!</blockquote>
+      <cite>~Mrs. Green, mother of 2,  Home Plan</cite>
     </div>
 
-    <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
-      This was a super duper great system that was exactly what I needed!
-      ~Ms. White,  Vice-President of Cookie Cat, Business
+    <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 island">
+      <blockquote>This was a super duper great system that was exactly what I needed!</blockquote>
+      <cite>~Ms. White,  Vice-President of Cookie Cat, Business</cite>
     </div>
   </div>
 
+</main>
 
+<footer>
 
-  <footer>
-    <div class="signup-bar island">
-      <h2><a href="signup.html">Sign up!</a></h2>
+  <div class="grid grid-middle contact island">
+    <div class="unit xs-1 s-1-2 m-1-2 l-1-2 xl-1-2">
+      <h5>Contact</h5>
+      <ul class="list-group milli">
+        <li>66 Dollar Way</li>
+        <li><a href="tel:+18002460142">1-800-246-0142</a></li>
+        <li><a href="mailto:info@fundfriend.com">info@fundfriend.com</a></li>
+      </ul>
+      <p class="milli">© 2015 FundFriend. All rights reserved.</p>
     </div>
-
-    <div class="grid grid-middle contact island">
-      <div class="unit xs-1 s-1-2 m-1-2 l-1-2 xl-1-2">
-        <h5>Contact</h5>
-        <ul class="list-group milli">
-          <li>66 Dollar Way</li>
-          <li><a href="tel:+18002460142">1-800-246-0142</a></li>
-          <li><a href="mailto:info@fundfriend.com">info@fundfriend.com</a></li>
-        </ul>
-        <p class="milli">© 2015 FundFriend. All rights reserved.</p>
-      </div>
-      <div class="unit xs-1 s-1-2 m-1- l-1-2 xl-1-2">
-        <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
-        <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
-      </div>
+    <div class="unit xs-1 s-1-2 m-1- l-1-2 xl-1-2">
+      <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
+      <a href="http://facebook.com"><img src="images/place-holder-icon.svg" alt="Placeholder icon."></a>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
