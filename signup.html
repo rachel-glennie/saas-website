@@ -15,128 +15,141 @@
 </head>
 <body>
 
-  <header class="grid island">
-    <div class="unit xs-2-3 s-2-3 m-2-3 l-1-2 xl-1-2">
-      <a href="index.html"><img src="http://placehold.it/150x50" alt="Placeholder for the logo."></a>
-    </div>
-    <nav class="unit xs-1-3 s-1-3 m-1-3 l-1-2 xl-1-2">
-      <input type="checkbox" class="nav-check" id="nav-check">
-      <label for="nav-check" class="nav-label">
-        <img class="nav-open" src="images/nav-toggle.svg" alt="Open Navigation Menu">
-        <img class="nav-close pad-b" src="images/nav-toggle-close.svg" alt="Close Navigation Menu">
-      </label>
-      <ol class="list-group nav">
-        <li><a href="tour.html">Features</a></li>
-        <li><a href="pricing.html">Plans</a></li>
-        <li><a href="login.html">Log In</a></li>
-        <li class="button-style-1"><a href="signup.html">Sign Up!</a></li>
-      </ol>
-    </nav>
-  </header>
+
+<ul class="skip-links">
+  <li><a href="#main">Jump to main content</a></li>
+  <li><a href="#nav">Jump to navigation</a></li>
+</ul>
+
+
+
+<header class="grid island" role="banner">
+  <div class="unit xs-2-3 s-2-3 m-2-3 l-1-2 xl-1-2">
+    <a href="index.html"><img src="http://placehold.it/150x50" alt="FundFriend."></a>
+  </div>
+  <nav class="unit xs-1-3 s-1-3 m-1-3 l-1-2 xl-1-2" role="navigation">
+    <input type="checkbox" class="nav-check" id="nav-check">
+    <label for="nav-check" class="nav-label">
+      <img class="nav-open" src="images/nav-toggle.svg" alt="Open Navigation Menu">
+      <img class="nav-close pad-b" src="images/nav-toggle-close.svg" alt="Close Navigation Menu">
+    </label>
+    <ol class="list-group nav">
+      <li><a href="tour.html">Features</a></li>
+      <li><a href="pricing.html">Plans</a></li>
+      <li><a href="login.html">Log In</a></li>
+      <li class="button-style-1"><a href="signup.html">Sign Up!</a></li>
+    </ol>
+  </nav>
+</header>
 
   <div class="mini-billboard">
     <h1>Sign Up</h1>
   </div>
-<form action="thanks.html" method="post">
 
-  <div class="margin-medium pad-t-2 gutter">
-    <h3>Choose your plan</h3>
+<main id="main">
 
-    <fieldset>
+    <form action="thanks.html" method="post">
+
+    <div class="margin-medium pad-t-2 gutter">
+      <h3>Choose your plan</h3>
+
+      <fieldset>
+        <div>
+          <input id="personal" type="radio" name="plan">
+          <label for="personal">Personal Plan ($8/Month)</label>
+        </div>
+
+        <div>
+          <input id="home" type="radio" name="plan">
+          <label for="home">Home Plan ($18/Month)</label>
+        </div>
+
+        <div>
+          <input id="business" type="radio" name="plan">
+          <label for="business">Business Plan ($28/Month)</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="margin-medium pad-b-2 gutter">
+      <h3>Create your account</h3>
+
       <div>
-        <input id="personal" type="radio" name="plan">
-        <label for="personal">Personal Plan ($8/Month)</label>
+        <label for="first-name">First Name</label>
+        <input id="first-name" placeholder="Mary">
       </div>
 
       <div>
-        <input id="home" type="radio" name="plan">
-        <label for="home">Home Plan ($18/Month)</label>
+        <label for="last-name">Last Name</label>
+        <input id="last-name" placeholder="Smith">
       </div>
 
       <div>
-        <input id="business" type="radio" name="plan">
-        <label for="business">Business Plan ($28/Month)</label>
-      </div>
-    </fieldset>
-  </div>
-
-  <div class="margin-medium pad-b-2 gutter">
-    <h3>Create your account</h3>
-
-    <div class="hidden-label">
-      <input id="first-name" placeholder="First Name">
-      <label for="first-name">First Name</label>
-    </div>
-
-    <div class="hidden-label">
-      <input id="last-name" placeholder="Last Name">
-      <label for="last-name">Last Name</label>
-    </div>
-
-    <div class="hidden-label">
-      <input type="email" id="email" placeholder="Email Address">
-      <label for="email">Email Address</label>
-    </div>
-
-    <div class="hidden-label">
-      <input type="password" id="password" placeholder="Password">
-      <label for="password">Password</label>
-    </div>
-
-    <div class="hidden-label">
-      <input type="password" id="confirm-password" placeholder="Confirm Password">
-      <label for="confirm-password">Confirm Password</label>
-    </div>
-  </div>
-
-
-  <div class="margin-medium pad-b-2 gutter">
-    <h3>Set up your payment method</h3>
-
-    <fieldset>
-      <div>
-        <input id="visa" type="radio" name="payment">
-        <label for="visa">VISA</label>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="m.smith@fundfriend.net">
       </div>
 
       <div>
-        <input id="mastercard" type="radio" name="payment">
-        <label for="mastercard">Mastercard</label>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••">
       </div>
 
       <div>
-        <input id="a-express" type="radio" name="payment">
-        <label for="a-express">American Express</label>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="••••••••">
       </div>
-    </fieldset>
-
-    <div class="hidden-label">
-      <input id="card-name" placeholder="Cardholder's Name">
-      <label for="card-name">Cardholder's Name</label>
-    </div>
-
-    <div class="hidden-label">
-      <input id="card-number" placeholder="Card Number">
-      <label for="card-number">Card Number</label>
-    </div>
-
-    <div>
-      <label for="date">Expiration Date</label>
-      <input type="date" id="date">
     </div>
 
 
-    <div>
-      <label for="security-code">Security Code</label>
-      <input type="password" id="security-code" placeholder="Security Code" maxlength="4">
+    <div class="margin-medium pad-b-2 gutter">
+      <h3>Set up your payment method</h3>
+
+      <fieldset>
+        <div>
+          <input id="visa" type="radio" name="payment">
+          <label for="visa">VISA</label>
+        </div>
+
+        <div>
+          <input id="mastercard" type="radio" name="payment">
+          <label for="mastercard">Mastercard</label>
+        </div>
+
+        <div>
+          <input id="a-express" type="radio" name="payment">
+          <label for="a-express">American Express</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="card-name">Cardholder's Name</label>
+        <input id="card-name" placeholder="John Smith">
+      </div>
+
+      <div class="pad-b">
+        <label for="card-number">Card Number</label>
+        <input id="card-number" placeholder="1234 5679 1234">
+      </div>
+
+      <div class="stacked-label">
+        <label for="date">Expiration Date</label>
+        <input type="date" id="date">
+      </div>
+
+
+      <div class="stacked-label">
+        <label for="security-code">Security Code</label>
+        <input type="password" id="security-code" placeholder="####" maxlength="4">
+      </div>
+
+      <div class="pad-t">
+        <button type="submit" class="button-style-1">Submit</button>
+      </div>
     </div>
 
-    <div class="pad-t">
-      <button type="submit" class="button-style-1">Submit</button>
-    </div>
-  </div>
+  </form>
 
-</form>
+</main>
 
 
 <footer>
