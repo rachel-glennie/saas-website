@@ -1,5 +1,10 @@
 html {
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, a {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: bold;
 }
 
 a {
@@ -14,7 +19,11 @@ h2 {
 }
 
 header {
-	background-color: #555;
+	background-color: #0c4454;
+}
+
+header p {
+	font-weight: 600;
 }
 
 .nav-label img {
@@ -27,11 +36,10 @@ nav ol {
 }
 
 nav li {
-	padding: 0.5em;
+	margin: 0em 0.5em;
 	border-top: 2px solid black;
-	text-align: center
+	text-align: center;
 }
-
 
 .nav {
 	display: none;
@@ -64,31 +72,39 @@ nav li {
 }
 
 .billboard {
-	background-image: url(http://placehold.it/2500x500);
+	background-image: url('../images/billboard-index.jpg');
 	background-repeat: no-repeat;
 	margin: 0em;
 	padding: 7rem 1rem;
 	text-align: center;
+	color: white;
+}
+
+.billboard h1, .billboard h2, .billboard p, .mini-billboard h1 {
+	text-shadow: 2px 2px 5px rgba(0,0,0,.5);
 }
 
 .mini-billboard {
-	text-align: center;
-	margin: 0em;
-	background-color: #e8e8e8;
+	background-image: url('../images/billboard-index.jpg');
+	background-repeat: no-repeat;
 	padding: 2em;
+	text-align: center;
+	color: white;
+	margin: 0em;
 }
 
 .button-style-1 {
 	border-radius: 1em;
-	background-color: black;
+	background-color: #bcd45c;
 	padding: 0.5em 1em;
 	font-size: 1.2rem;
 	color: white;
-
+	cursor: pointer;
+	border: none;
 }
 
 .signup-bar {
-	background-color: gray;
+	background-color: #bcd45c;
 	text-align: center;
 }
 
@@ -98,16 +114,17 @@ nav li {
 
 .signup-bar a {
 	border-radius: 1em;
-	background-color: #A7A9AC;
-	padding: 0em 1em;
+	padding: 0.2em 1em;
+	background-color: #617327;
 }
 
 .contact {
-	background-color: #555;
+	background-color: #0c4454;
+	color: white;
 }
 
 .contact a {
-	color: grey;
+	text-decoration: underline;
 }
 
 .contact p, .contact h5 {
@@ -131,21 +148,9 @@ nav li {
 	background-color: #e0e0e0;
 }
 
-.stacked-label input{
-	display: block;
-}
-
-.stacked-label {
+.inline-label {
 	display: inline-block;
 	vertical-align: top;
-}
-
-.hidden-label {
-	margin: 1em 0em;
-}
-
-.hidden-label label {
-	display: none;
 }
 
 fieldset {
@@ -155,6 +160,25 @@ fieldset {
 
 fieldset div{
 	padding: 0.75em;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+}
+
+input {
+	border-radius: 0.5em;
+	border: 1px solid #8c8c8c;
+	padding: 0.1em 0.25em 0em 0.25em;
+}
+
+input + label {
+	display: inline-block;
+}
+
+form div {
+	padding: 0.5em;
 }
 
 /* margin classes */
