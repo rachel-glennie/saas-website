@@ -51,6 +51,10 @@ a {
 	cursor: pointer;
 }
 
+main {
+	margin: 0 auto;
+}
+
 .circle-image {
 	border-radius: 100%;
 }
@@ -67,6 +71,10 @@ header p {
 	font-weight: 600;
 }
 
+.logo {
+	max-width: 20em;
+}
+
 .nav-label img {
 	max-width: 50px;
 	text-align: right;
@@ -80,6 +88,7 @@ nav li {
 	margin: 0em 0.5em;
 	border-top: 2px solid black;
 	text-align: center;
+	padding: 0.5em 0em;
 }
 
 .nav {
@@ -173,11 +182,17 @@ nav li {
 }
 
 .contact img {
-	max-width: 40%;
+	max-width: 100px;
+	padding-right: 1em;
+	padding-top: 1em;
 }
 
 
 /* Relate solely to specific pages */
+
+.feature-icon{
+	max-width: 80px;
+}
 
 .index-item {
 	text-align: center;
@@ -185,8 +200,13 @@ nav li {
 }
 
 .plan-box {
-	border: 2px solid black;
-	background-color: #e0e0e0;
+	border: 2px solid white;
+	background-color: #2C8C74;
+	padding:
+}
+
+.plan-box h4 {
+	color: white;
 }
 
 .inline-label {
@@ -229,6 +249,11 @@ form div {
 	max-width: 40rem
 }
 
+.margin-large {
+	margin: 0 auto;
+	max-width: 60rem;
+}
+
 @media only screen and (min-width: 38em) {
 
 	.index-item {
@@ -245,9 +270,6 @@ form div {
 		max-width: 40rem
 	}
 
-	.contact img {
-		max-width: 30%;
-	}
 
 	.nav {
 		display: block;
@@ -276,11 +298,17 @@ form div {
 
 }
 
-@media only screen and (min-width: 90em) {
 
-	.contact img {
-		max-width: 160px;
+@media print {
+
+	img {}
+
+	a {
+		display: none;
 	}
 
+	img {
+		max-width:
+	}
 
 }
