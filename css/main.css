@@ -301,14 +301,16 @@ form div {
 
 @media print {
 
-	img {}
-
-	a {
-		display: none;
-	}
-
 	img {
-		max-width:
+		max-width: 200px;
 	}
+
+nav,
+.nav-open,
+.nav-close,
+.button-style-1,
+.signup-bar {
+	display: none;
+}
 
 }
